@@ -1,1 +1,5 @@
-test
+At here set up topest level topics, like DesignPattern, as TOPIC
+
+Then create TOPIC\documents for documents
+
+Then create TOPIC\Projects for eclipse project workspace. so to start eclipse, can point to this root of Projects as the workspace location.
