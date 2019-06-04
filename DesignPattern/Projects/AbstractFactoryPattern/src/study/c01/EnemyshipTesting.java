@@ -1,6 +1,6 @@
 package study.c01;
 
-public class EnemyshipTesting {
+public class EnemyShipTesting {
 
 	public static void main(String[] args) {
 
