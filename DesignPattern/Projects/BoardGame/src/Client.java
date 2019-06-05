@@ -7,6 +7,6 @@ public class Client {
 		me.setVisible(true);
 		me.pack();
 		me.setTitle("Test of GridLayout"); 
-		me.setSize(900, 900);
+		me.setSize(700, 700);
 	}
 }

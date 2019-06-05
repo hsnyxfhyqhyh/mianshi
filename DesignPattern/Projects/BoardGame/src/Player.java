@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Player {
 
@@ -9,8 +10,186 @@ public class Player {
 	
 	private String name= ""; 
 	
-	private GButton[] positions = new GButton[4]; 
+	private ArrayList<GButton> positions = new ArrayList(); 
 	
+	private ArrayList<GButton> routePositions =  new ArrayList();
+	
+	
+	public ArrayList<GButton> getRoutePositions() {
+		return routePositions;
+	}
+
+	public void setRoutePositions(Layout layout) {
+		GButton[][] buttons = layout.getButtons();
+		if (this.isPink()) {
+			routePositions.add(buttons[1][2]);
+			routePositions.add(buttons[1][3]);
+			routePositions.add(buttons[1][4]);
+			routePositions.add(buttons[1][5]);
+			routePositions.add(buttons[1][6]);
+			routePositions.add(buttons[1][7]);
+			routePositions.add(buttons[1][8]);
+			routePositions.add(buttons[1][9]);
+			routePositions.add(buttons[2][9]);
+			routePositions.add(buttons[3][9]);
+			routePositions.add(buttons[4][9]);
+			routePositions.add(buttons[5][9]);
+			routePositions.add(buttons[6][9]);
+			routePositions.add(buttons[7][9]);
+			routePositions.add(buttons[8][9]);
+			routePositions.add(buttons[9][9]);
+			routePositions.add(buttons[9][8]);
+			routePositions.add(buttons[9][7]);
+			routePositions.add(buttons[9][6]);
+			routePositions.add(buttons[9][5]);
+			routePositions.add(buttons[9][4]);
+			routePositions.add(buttons[9][3]);
+			routePositions.add(buttons[9][2]);
+			routePositions.add(buttons[9][1]);
+			routePositions.add(buttons[8][1]);
+			routePositions.add(buttons[7][1]);
+			routePositions.add(buttons[6][1]);
+			routePositions.add(buttons[5][1]);
+			routePositions.add(buttons[4][1]);
+			routePositions.add(buttons[3][1]);
+			routePositions.add(buttons[2][1]);
+			routePositions.add(buttons[1][1]);
+			
+			routePositions.add(buttons[2][2]);
+			routePositions.add(buttons[3][3]);
+			routePositions.add(buttons[4][4]);
+		} else if (this.isGreen()) {
+			routePositions.add(buttons[2][9]);
+			routePositions.add(buttons[3][9]);
+			routePositions.add(buttons[4][9]);
+			routePositions.add(buttons[5][9]);
+			routePositions.add(buttons[6][9]);
+			routePositions.add(buttons[7][9]);
+			routePositions.add(buttons[8][9]);
+			routePositions.add(buttons[9][9]);
+			
+			routePositions.add(buttons[9][8]);
+			routePositions.add(buttons[9][7]);
+			routePositions.add(buttons[9][6]);
+			routePositions.add(buttons[9][5]);
+			routePositions.add(buttons[9][4]);
+			routePositions.add(buttons[9][3]);
+			routePositions.add(buttons[9][2]);
+			routePositions.add(buttons[9][1]);
+			
+			routePositions.add(buttons[8][1]);
+			routePositions.add(buttons[7][1]);
+			routePositions.add(buttons[6][1]);
+			routePositions.add(buttons[5][1]);
+			routePositions.add(buttons[4][1]);
+			routePositions.add(buttons[3][1]);
+			routePositions.add(buttons[2][1]);
+			routePositions.add(buttons[1][1]);
+			
+			routePositions.add(buttons[1][2]);
+			routePositions.add(buttons[1][3]);
+			routePositions.add(buttons[1][4]);
+			routePositions.add(buttons[1][5]);
+			routePositions.add(buttons[1][6]);
+			routePositions.add(buttons[1][7]);
+			routePositions.add(buttons[1][8]);
+			routePositions.add(buttons[1][9]);
+			
+			routePositions.add(buttons[2][8]);
+			routePositions.add(buttons[3][7]);
+			routePositions.add(buttons[4][6]);
+		} else if (this.isBlue()) {
+			routePositions.add(buttons[9][8]);
+			routePositions.add(buttons[9][7]);
+			routePositions.add(buttons[9][6]);
+			routePositions.add(buttons[9][5]);
+			routePositions.add(buttons[9][4]);
+			routePositions.add(buttons[9][3]);
+			routePositions.add(buttons[9][2]);
+			routePositions.add(buttons[9][1]);
+			
+			routePositions.add(buttons[8][1]);
+			routePositions.add(buttons[7][1]);
+			routePositions.add(buttons[6][1]);
+			routePositions.add(buttons[5][1]);
+			routePositions.add(buttons[4][1]);
+			routePositions.add(buttons[3][1]);
+			routePositions.add(buttons[2][1]);
+			routePositions.add(buttons[1][1]);
+			
+			routePositions.add(buttons[1][2]);
+			routePositions.add(buttons[1][3]);
+			routePositions.add(buttons[1][4]);
+			routePositions.add(buttons[1][5]);
+			routePositions.add(buttons[1][6]);
+			routePositions.add(buttons[1][7]);
+			routePositions.add(buttons[1][8]);
+			routePositions.add(buttons[1][9]);
+			
+			routePositions.add(buttons[2][9]);
+			routePositions.add(buttons[3][9]);
+			routePositions.add(buttons[4][9]);
+			routePositions.add(buttons[5][9]);
+			routePositions.add(buttons[6][9]);
+			routePositions.add(buttons[7][9]);
+			routePositions.add(buttons[8][9]);
+			routePositions.add(buttons[9][9]);
+			
+			routePositions.add(buttons[8][8]);
+			routePositions.add(buttons[7][7]);
+			routePositions.add(buttons[6][6]);
+		} else if (this.isYellow()) {
+			routePositions.add(buttons[8][1]);
+			routePositions.add(buttons[7][1]);
+			routePositions.add(buttons[6][1]);
+			routePositions.add(buttons[5][1]);
+			routePositions.add(buttons[4][1]);
+			routePositions.add(buttons[3][1]);
+			routePositions.add(buttons[2][1]);
+			routePositions.add(buttons[1][1]);
+			
+			routePositions.add(buttons[1][2]);
+			routePositions.add(buttons[1][3]);
+			routePositions.add(buttons[1][4]);
+			routePositions.add(buttons[1][5]);
+			routePositions.add(buttons[1][6]);
+			routePositions.add(buttons[1][7]);
+			routePositions.add(buttons[1][8]);
+			routePositions.add(buttons[1][9]);
+			
+			routePositions.add(buttons[2][9]);
+			routePositions.add(buttons[3][9]);
+			routePositions.add(buttons[4][9]);
+			routePositions.add(buttons[5][9]);
+			routePositions.add(buttons[6][9]);
+			routePositions.add(buttons[7][9]);
+			routePositions.add(buttons[8][9]);
+			routePositions.add(buttons[9][9]);
+			
+			routePositions.add(buttons[9][8]);
+			routePositions.add(buttons[9][7]);
+			routePositions.add(buttons[9][6]);
+			routePositions.add(buttons[9][5]);
+			routePositions.add(buttons[9][4]);
+			routePositions.add(buttons[9][3]);
+			routePositions.add(buttons[9][2]);
+			routePositions.add(buttons[9][1]);
+			
+			routePositions.add(buttons[8][2]);
+			routePositions.add(buttons[7][3]);
+			routePositions.add(buttons[6][4]);
+		}
+		
+	}
+
+	public ArrayList<GButton> getPositions() {
+		return positions;
+	}
+
+	public void setPositions(ArrayList<GButton> positions) {
+		this.positions = positions;
+	}
+
 	private Player nextPlayer = null;
 	
 	
@@ -33,14 +212,18 @@ public class Player {
 			this.name = "G";
 		}
 	}
-
-	public GButton[] getPositions() {
-		return positions;
+	
+	public GButton getTargetMove(GButton origin, int steps) {
+		return null;
 	}
 
-	public void setPositions(GButton[] positions) {
-		this.positions = positions;
-	}
+//	public GButton[] getPositions() {
+//		return positions;
+//	}
+//
+//	public void setPositions(GButton[] positions) {
+//		this.positions = positions;
+//	}
 
 	public boolean isGreen() {
 		return isGreen;

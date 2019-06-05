@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.*; 
 
@@ -29,43 +30,41 @@ public class Layout extends JFrame{
 				//create button
 				if (i==1 || i==9 || j==1 || j==9) {
 					//Route button
-					button = new GButton(this, i + "" + j );	
+					//button = new GButton(this, i + "" + j );
+					button = new GButton(this);
 				} else {
 					//non route buttons, 
 					button = new GButton(this);
 				}
 				
-				Position position = new Position(i, j); 
-				button.setPosition(position);
-			
 				//pink player final winning route button color
 				if (i==j && i<5) {
 					button.setBackground(Color.PINK);
-					button.setText(i + "" + j );
+//					button.setText(i + "" + j );
 				}
 				
 				//Blue player final winning route button color
 				if (i==j && i>5) {
 					button.setBackground(Color.CYAN);
-					button.setText(i + "" + j );
+//					button.setText(i + "" + j );
 				}
 				
 				//Green player final winning route button color
 				if(i+j == 10 && i<5) {
 					button.setBackground(Color.GREEN);
-					button.setText(i + "" + j );
+//					button.setText(i + "" + j );
 				}
 				
 				//Yellow player final winning route button color
 				if(i+j == 10 && i>5) {
 					button.setBackground(Color.YELLOW);
-					button.setText(i + "" + j );
+//					button.setText(i + "" + j );
 				}
 				
 				//Dice Button 
 				if(i+j == 10 && i==5) {
 					button.setBackground(Color.RED);
-					button.setText("R");
+					button.setText("Roll");
 					button.setEnabled(true);
 					button.setDiceButton(true);
 				}
@@ -123,9 +122,9 @@ public class Layout extends JFrame{
 		
 		GButton gHomeButton = buttons[3][8] ; 
 		gPlayer.setHomeButton(gHomeButton);
-				
+		
 		bPlayer.setNextPlayer(yPlayer);
-		GButton bHomeButton = buttons[8][3] ; 
+		GButton bHomeButton = buttons[8][7] ; 
 		bPlayer.setHomeButton(bHomeButton);
 		
 		yPlayer.setNextPlayer(pPlayer);
@@ -137,7 +136,13 @@ public class Layout extends JFrame{
 		pPlayer.setHomeButton(pHomeButton);
 		
 		//set up the initial player - the pink player 
-		currentPlayer = pPlayer; 
+		currentPlayer = pPlayer;
+		
+//		ArrayList<GButton> gPositions = this.getCurrentPlayer().getPositions(); 
+//		gPositions.add(buttons[1][3]);
+//		gPositions.add(buttons[1][6]);
+//		gPositions.add(buttons[4][9]);
+//		gPositions.add(buttons[9][7]);
 		
 	}
 	

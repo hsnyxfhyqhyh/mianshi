@@ -1,10 +1,10 @@
 
-public class Position {
+public class Position1 {
 	private int row; 
 	
 	private int column; 
 	
-	public Position(int row, int column) {
+	public Position1(int row, int column, int i) {
 		this.row = row; 
 		this.column = column; 
 	}
