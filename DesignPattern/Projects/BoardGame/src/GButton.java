@@ -15,14 +15,14 @@ public class GButton extends JButton {
 	
 	public GButton(Layout layout) {
 		super();
-		this.setEnabled(true);
+		this.setEnabled(false);
 		addAction();
 		this.layout = layout; 
 	}
 	
 	public GButton(Layout layout, String text) {
 		super(text);
-		this.setEnabled(true);
+		this.setEnabled(false);
 		addAction();
 		this.layout = layout; 
 	}
@@ -72,10 +72,19 @@ public class GButton extends JButton {
 
 		    @Override
 		    public void actionPerformed(ActionEvent e) {
-		        //System.out.println("test");
 		    	GButton b = (GButton)e.getSource(); 
 		    	b.setText(layout.getClickedText());
+		    	GButton[][] buttons = b.getGLayout().getButtons(); 
+		    	buttons[2][3].setEnabled(true);
 		    }
 		});
+	}
+
+	public Layout getGLayout() {
+		return layout;
+	}
+
+	public void setLayout(Layout layout) {
+		this.layout = layout;
 	}
 }

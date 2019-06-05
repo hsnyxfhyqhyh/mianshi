@@ -6,12 +6,19 @@ import javax.swing.*;
 
 public class Layout extends JFrame{
 	GButton[][] buttons = new GButton[10][10]; 
+	Player[] players = new Player[4]; 
+	
+	Player  currentPlayer= null;
+	
 	int rows = 9; 
 	int cols = 9; 
 	
 	public Layout() {
 		setLayout(new GridLayout(rows, cols)); 
+		
 		initBoard();
+		
+		initPlayers(); 
 	}
 	
 	private void initBoard() {
@@ -27,6 +34,9 @@ public class Layout extends JFrame{
 					//non route buttons, 
 					button = new GButton(this);
 				}
+				
+				Position position = new Position(i, j); 
+				button.setPosition(position);
 			
 				//pink player final winning route button color
 				if (i==j && i<5) {
@@ -95,6 +105,42 @@ public class Layout extends JFrame{
 		}
 	}
 
+	private void initPlayers() {
+		Player gPlayer = new Player("G");
+		players[0] = gPlayer;
+		
+		Player bPlayer = new Player("B");
+		players[1] = bPlayer;
+		
+		Player yPlayer = new Player("Y");
+		players[2] = yPlayer;
+		
+		Player pPlayer = new Player("P");
+		players[3] = pPlayer;
+		
+		//setup the player order.
+		gPlayer.setNextPlayer(bPlayer);
+		
+		GButton gHomeButton = buttons[3][8] ; 
+		gPlayer.setHomeButton(gHomeButton);
+				
+		bPlayer.setNextPlayer(yPlayer);
+		GButton bHomeButton = buttons[8][3] ; 
+		bPlayer.setHomeButton(bHomeButton);
+		
+		yPlayer.setNextPlayer(pPlayer);
+		GButton yHomeButton = buttons[7][2] ; 
+		yPlayer.setHomeButton(yHomeButton);
+		
+		pPlayer.setNextPlayer(gPlayer);
+		GButton pHomeButton = buttons[2][3] ; 
+		pPlayer.setHomeButton(pHomeButton);
+		
+		//set up the initial player - the pink player 
+		currentPlayer = pPlayer; 
+		
+	}
+	
 	public String getClickedText() {
 		// TODO Auto-generated method stub
 		return "Clicked";
@@ -102,5 +148,13 @@ public class Layout extends JFrame{
 
 	public GButton[][] getButtons() {
 		return buttons;
+	}
+	
+	public Player getCurrentPlayer() {
+		return currentPlayer;
+	}
+
+	public void setCurrentPlayer(Player currentPlayer) {
+		this.currentPlayer = currentPlayer;
 	}
 }
