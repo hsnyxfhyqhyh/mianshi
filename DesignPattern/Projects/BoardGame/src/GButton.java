@@ -6,7 +6,7 @@ import javax.swing.JButton;
 public class GButton extends JButton {
 	private Position position ; 
 	
-	private Player player; 
+//	private Player player; 
 	private boolean isHomeButton = false; 
 	private boolean isDiceButton = false; 
 	private boolean isRouteButton = false;
@@ -35,13 +35,13 @@ public class GButton extends JButton {
 		this.position = position;
 	}
 
-	public Player getPlayer() {
-		return player;
-	}
-
-	public void setPlayer(Player player) {
-		this.player = player;
-	}
+//	public Player getPlayer() {
+//		return player;
+//	}
+//
+//	public void setPlayer(Player player) {
+//		this.player = player;
+//	}
 
 	public boolean isHomeButton() {
 		return isHomeButton;
