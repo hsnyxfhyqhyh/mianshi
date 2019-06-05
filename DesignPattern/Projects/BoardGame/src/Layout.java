@@ -1,4 +1,7 @@
-import java.awt.*; 
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*; 
 
 public class Layout extends JFrame{
@@ -24,24 +27,37 @@ public class Layout extends JFrame{
 				
 				if (i==j && i<5) {
 					button.setBackground(Color.PINK);
+					button.setText(i + "" + j );
 				}
 				
 				if (i==j && i>5) {
 					button.setBackground(Color.CYAN);
+					button.setText(i + "" + j );
 				}
 				
 				if(i+j == 10 && i<5) {
 					button.setBackground(Color.GREEN);
+					button.setText(i + "" + j );
 				}
 				
 				if(i+j == 10 && i>5) {
 					button.setBackground(Color.YELLOW);
+					button.setText(i + "" + j );
 				}
 				
 				if(i+j == 10 && i==5) {
 					button.setBackground(Color.RED);
 					button.setText("R");
 					button.setEnabled(true);
+					button.addActionListener(new ActionListener() {
+
+					    @Override
+					    public void actionPerformed(ActionEvent e) {
+					        //System.out.println("test");
+					    	JButton b = (JButton)e.getSource(); 
+					    	b.setText("Clicked");
+					    }
+					});
 				}
 				
 				if (i==2 && j==3) {
