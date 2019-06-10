@@ -1,0 +1,24 @@
+<web-app>
+	<display-name>Archetype created Web Application</display-name>
+	
+	<context-param>
+      <param-name>Log4j-config-location</param-name>
+      <param-value>/WEB-INF/log4j.properties</param-value>
+    </context-param>
+    
+    <servlet>
+      <servlet-name>WelcomeServlet</servlet-name>
+      <display-name>WelcomeServlet</display-name>
+      <servlet-class>com.ying.controller.WelcomeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+      <servlet-name>WelcomeServlet</servlet-name>
+      <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    
+    <listener>
+    	<listener-class>com.ying.controller.AppContextListener</listener-class>
+    </listener>
+    
+</web-app>
