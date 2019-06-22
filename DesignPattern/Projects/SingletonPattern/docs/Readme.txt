@@ -12,3 +12,7 @@ Actually the singleton pattern concept is very easy
 	otherwise, return the static instance. 
 	
 5. The sample provided by Derek here is a little more complicated because he was trying to explain the thread can have impact to the singleton, 
+
+
+>> Reviewed
+	on 6/22/2019
