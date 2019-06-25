@@ -1,0 +1,3 @@
+Chain of Responsibility
+
+http://www.newthinktank.com/2012/10/chain-of-responsibility-design-pattern-tutorial/
