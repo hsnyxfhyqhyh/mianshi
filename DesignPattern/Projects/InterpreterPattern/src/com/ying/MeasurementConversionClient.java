@@ -7,7 +7,10 @@ import javax.swing.*;
 public class MeasurementConversionClient {
 
 	public static void main(String[] args) {
-
+		//Package name needed for this example to work. 
+		String class_for_name_package = "com.ying."; 
+		
+		
 		// Create pop up window that asks for a question
 
 		JFrame frame = new JFrame();
@@ -29,7 +32,7 @@ public class MeasurementConversionClient {
 
 			// Get class based on the from conversion string
 
-			Class tempClass = Class.forName(fromConversion);
+			Class tempClass = Class.forName(class_for_name_package + fromConversion);
 
 			// Get the constructor dynamically for the conversion string
 
