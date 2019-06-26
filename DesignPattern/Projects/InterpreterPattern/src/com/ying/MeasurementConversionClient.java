@@ -10,6 +10,8 @@ public class MeasurementConversionClient {
 		//Package name needed for this example to work. 
 		String class_for_name_package = "com.ying."; 
 		
+		//TODO: Sample questions can be "3 cups equals gallons"
+		
 		
 		// Create pop up window that asks for a question
 
