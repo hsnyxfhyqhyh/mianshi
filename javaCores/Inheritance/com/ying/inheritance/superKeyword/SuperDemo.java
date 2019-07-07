@@ -1,5 +1,7 @@
 package com.ying.inheritance.superKeyword;
 
+import com.ying.Utility;
+
 class A
 {
 	public A() {
@@ -50,17 +52,19 @@ public class SuperDemo {
 	public static void main(String[] args) {
 		A obj1 = new A(); 
 		//print 'in A'
-		System.out.println("\n");
+		
+		Utility.printBlankLine();
 		
 		B obj2 = new B(); 
 		//print 'in A' \n 'in B', it calls the super class constructor and its own constructor
 		
-		System.out.println("\n");
+		Utility.printBlankLine();
 
 		//This will still call the constructor of A with no parameter as default behavior.  
 		B obj3 = new B(5); 
 		
-		System.out.println("\n");
+		Utility.printBlankLine();
+		
 		C obj4 = new C(5);
 
 	}
