@@ -6,6 +6,24 @@
 	<classpathentry kind="src" path="03-abstractFactoryPattern"/>
 	<classpathentry kind="src" path="04-builderPattern"/>
 	<classpathentry kind="src" path="05-prototypePattern"/>
+	<classpathentry kind="src" path="06-adapterPattern"/>
+	<classpathentry kind="src" path="07-bridgePattern"/>
+	<classpathentry kind="src" path="08-compositePattern"/>
+	<classpathentry kind="src" path="09-decoratorPattern"/>
+	<classpathentry kind="src" path="10-facadePattern"/>
+	<classpathentry kind="src" path="11-flyweightPattern"/>
+	<classpathentry kind="src" path="12-proxyPattern"/>
+	<classpathentry kind="src" path="13-chainofResponsibilityPattern"/>
+	<classpathentry kind="src" path="14-commandPattern"/>
+	<classpathentry kind="src" path="15-interpreterPattern"/>
+	<classpathentry kind="src" path="16-iteratorPattern"/>
+	<classpathentry kind="src" path="17-mediatorPattern"/>
+	<classpathentry kind="src" path="18-mementoPattern"/>
+	<classpathentry kind="src" path="19-observerPattern"/>
+	<classpathentry kind="src" path="20-statePattern"/>
+	<classpathentry kind="src" path="21-strategyPattern"/>
+	<classpathentry kind="src" path="22-templatePattern"/>
+	<classpathentry kind="src" path="23-visitorPattern"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
