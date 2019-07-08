@@ -12,3 +12,7 @@ http://www.newthinktank.com/2012/09/adapter-design-pattern-tutorial/
 	
 5. Client: TestEnemyAttackersClient. 
 	You can see from the code, an instance of EnemyRobot was created directly and passed into the Adapter constructor, 
+	
+	
+Review history: 
+	7/9/2019 3rd time. sdf
