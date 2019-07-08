@@ -1,11 +1,17 @@
-Abstract Factory 
+**********************
+* Abstract Factory   *
+**********************
+http://www.newthinktank.com/2012/09/abstract-factory-design-pattern/
 
-1. program entry is the "EnemyShipTest", it declares an abstract EnemyShipBuilding Class, but instantiate it as a concrete one,  UFOEnemyShipBuilding, 
 
-2. In step1 , the client  EnemyShipTest passed a string value to the concrete Building to tell which concrete factory to use. 
+1. program entry is the "Client", it declares an abstract EnemyShipBuilding Class, but instantiate it as a concrete one,  UFOEnemyShipBuilding,
 
-3. Inside the Building class, depends on the string value, a local factory is created. 
-		And the local factory object is passed to Ship constructor to instantiate the concrete ship. 
+2. Client calls the concrete building's orderShip method with type of ship it wants as parameter, return object is an abstract ship. 
+	The first step inside the ordership method will call the abstract method "makeEnemyShip" defined in abstract building interface, 
+		since it is implemented in concrete building-UFOEnemyShipBuilding, then this method will be called.    
+		"makeEnemyShip" determines the factory based on the ship it requested, then create a concrete ship object with the concrete factory as a local variable. 
 		
-4. Inside the Building class, an abstract ship is also declared. since the ship has a factory declared inside of it. 
-		it can use the factory to build the correct weapon and engine for the ship. 
+	The 2nd step inside the ordership method will used the returned abstract ship object to make a ship, factory is built in. 
+		the ship object can use the factory to add gun and engine. 
+		
+

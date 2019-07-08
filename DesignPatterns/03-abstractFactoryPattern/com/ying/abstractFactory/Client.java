@@ -1,6 +1,6 @@
 package com.ying.abstractFactory;
 
-public class EnemyshipTesting {
+public class Client {
 
 	public static void main(String[] args) {
 
