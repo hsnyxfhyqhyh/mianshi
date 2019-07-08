@@ -15,4 +15,4 @@ http://www.newthinktank.com/2012/09/adapter-design-pattern-tutorial/
 	
 	
 Review history: 
-	7/9/2019 3rd time. sdf
+	7/9/2019 3rd time.
