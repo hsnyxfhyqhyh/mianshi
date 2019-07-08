@@ -21,4 +21,4 @@ but want the process of objects creation to be independent of the client class
 	then call getRobot function to get the final product with different parts. 
 	
 >> Review
-	on 6/22/2019 for 2nd time. 
+	on 7/9/2019 for 3nd time. 
