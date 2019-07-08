@@ -18,4 +18,4 @@ and allows for adding of any subclass instance of a known super class at run tim
 4. TestCloningClient calls the CloneFactory to getClone of a particular Animal.
 
 >> Reviewed
-	on 6/22/2019 for the 2nd Time. 
+	on 7/9/2019 for the 2nd Time. 

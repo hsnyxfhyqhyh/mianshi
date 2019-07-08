@@ -17,3 +17,6 @@ return object is an abstract ship.
 		the ship object can use the factory to add gun and engine. 
 		
 
+
+>> Reviewed
+	on 7/9/2019

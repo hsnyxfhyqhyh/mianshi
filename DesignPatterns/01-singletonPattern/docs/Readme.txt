@@ -15,4 +15,4 @@ Actually the singleton pattern concept is very easy
 
 
 >> Reviewed
-	on 6/22/2019
+	on 7/8/2019
