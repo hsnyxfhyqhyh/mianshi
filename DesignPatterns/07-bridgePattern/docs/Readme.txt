@@ -1,5 +1,6 @@
-Bridge Pattern:
-
+*******************
+* Bridge Pattern: *
+*******************
 http://www.newthinktank.com/2012/10/bridge-design-pattern-tutorial/
 
 NOTE:
@@ -18,3 +19,5 @@ NOTE:
 
 
 
+>> Reviewed
+	on 7/10/2019 for 2nd time. 

@@ -1,4 +1,6 @@
-Composite Pattern: 
+**********************
+* Composite Pattern: *
+**********************
 
 http://www.newthinktank.com/2012/10/composite-design-pattern-tutorial/
 
@@ -10,4 +12,5 @@ http://www.newthinktank.com/2012/10/composite-design-pattern-tutorial/
 		
 4. SongListGeneratorClient create all SongComponent in different forms of SongComponent, add composite the whole structure, and then dedicate to DiscJockey to call displaySongInfo of SongComponent.
 
-     
+>> Reviewed
+	on 7/10/2019 for 2nd time. 

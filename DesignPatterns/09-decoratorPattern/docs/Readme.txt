@@ -14,3 +14,7 @@ http://www.newthinktank.com/2012/09/decorator-design-pattern-tutorial/
 5. In the PizzaMakerClient code, you can see since everything is implementing the Pizza interface, 
 		we can nest the constructor call to have one unique pizza for the customerized instance of customer choice. The final result is still pizza. 
 		 
+		 
+
+>> Reviewed
+	on 7/9/2019 for 2nd time. 
