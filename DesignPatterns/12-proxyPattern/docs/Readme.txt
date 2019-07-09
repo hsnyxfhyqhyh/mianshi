@@ -30,3 +30,8 @@ In the implementation of the method in ATMProxy,
 
 		
 ESB has the similar concept of doing things. 
+
+
+>> Reviewed
+	on 7/10/2019 for 2nd time. 
+	

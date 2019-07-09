@@ -1,6 +1,6 @@
 package com.ying.proxy;
 
-public class TestATMMachine {
+public class TestATMMachineClient {
 	
 	public static void main(String[] args){
 		
