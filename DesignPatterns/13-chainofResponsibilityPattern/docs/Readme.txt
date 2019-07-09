@@ -15,3 +15,5 @@ Client class create instance for each Concrete class, and set up them in the cha
 	use the 1st chain object to do the calculation. If can handle, calculate it; otherwise, pass it to the next chain object. 
 	
 	  
+>> Reviewed
+	on 7/10/2019 for 2nd time. 

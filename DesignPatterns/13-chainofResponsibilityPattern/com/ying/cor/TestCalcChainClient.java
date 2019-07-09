@@ -1,6 +1,6 @@
 package com.ying.cor;
 
-public class TestCalcChain {
+public class TestCalcChainClient {
 	public static void main(String[] args) {
 
 		// Here I define all of the objects in the chain
