@@ -1,6 +1,10 @@
-Command Pattern:
+********************
+* Command Pattern: *
+********************
 
 http://www.newthinktank.com/2012/09/command-design-pattern-tutorial/
+
+
 
 1. define ElectronicDevice Interface, which declares on/off/volumeup/volumdown method. 
 2. define Television class to implement ElectronicDevice interface, which has the concrete on/off/volumeup/volumdown
@@ -18,4 +22,5 @@ http://www.newthinktank.com/2012/09/command-design-pattern-tutorial/
 		then call the DeviceButton'press function to invoke the command's execute function to execute the real device's function. 
 		
 		
-		
+>> Reviewed
+	on 7/10/2019 for 2nd time. 
