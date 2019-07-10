@@ -15,11 +15,13 @@ http://www.newthinktank.com/2012/09/command-design-pattern-tutorial/
 		Undo method will do the opposite function of the command is suppose to do. 
 5. DeviceButton is the action invoker class. It accepts a command in the constructor defined. 
 	And the command has the device binded to it. 
-	So the pressed function will invoke the command and then invoke the device's function. 
-6.  PlayWithRemoteClient will first create a device, 
+	So the pressed function will invoke the command and then invoke the device's function.
+	 
+6.  MOST IMPORTANT STEP 
+	PlayWithRemoteClient will first create a device, 
 		then use the device to create a command, 
 		then use the command to create a DeviceButton.
-		then call the DeviceButton'press function to invoke the command's execute function to execute the real device's function. 
+		then call the DeviceButton'press function to invoke the command's execute function to execute the real device's function.   
 		
 		
 >> Reviewed
