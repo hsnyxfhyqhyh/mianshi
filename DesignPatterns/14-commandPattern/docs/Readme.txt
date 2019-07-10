@@ -18,6 +18,7 @@ http://www.newthinktank.com/2012/09/command-design-pattern-tutorial/
 	So the pressed function will invoke the command and then invoke the device's function.
 	 
 6.  MOST IMPORTANT STEP 
+
 	PlayWithRemoteClient will first create a device, 
 		then use the device to create a command, 
 		then use the command to create a DeviceButton.
