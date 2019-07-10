@@ -27,6 +27,7 @@ This example trying to show how you can convert unit from cups/gallons/etc to pi
 	the 2nd part will be used to determine which concrete class is going to be instantiate. After instance A created, then it will be cast into Expression. 
 	the 4th part will be used to get the method name of A; 1st part will be used as the parameter when invoking this method. 
 	
-t
+>> Reviewed
+	on 7/10/2019 for 2nd time. 
 
 	  
