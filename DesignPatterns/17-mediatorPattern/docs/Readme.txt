@@ -19,4 +19,9 @@ Steps:
 4. Colleague has a constructor to pass in the mediator as parameter, and colleague itself can be added to Mediator's colleagues arraylist. 
 5. Client instantiate the mediator's instance then pass it to the Colleague's constructor. 
 	client then use colleague's communication method to do something and the mediator behind of the scene will be used to execute the operation .
- 
+
+	
+ >> Reviewed
+	on 7/11/2019 for 2nd time. 
+
+	  
