@@ -1,4 +1,6 @@
-Iterator Pattern:
+**********************
+* Iterator Pattern:  *
+**********************
 
 http://www.newthinktank.com/2012/10/iterator-design-pattern-tutorial/
 
@@ -15,3 +17,8 @@ Derek didn't try to start with UML Diagram, instead he jumps right into the codi
 7. The RadioStationClient  calls the DiscJockey's showTheSongs2 method to loop through different collection with the unique way of looping,
 	compare showTheSongs2 with showTheSongs, then you will see the iterator Pattern significantly reduce the code 
  
+ 
+ >> Reviewed
+	on 7/11/2019 for 2nd time. 
+
+	  
