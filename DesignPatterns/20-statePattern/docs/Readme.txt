@@ -17,3 +17,7 @@ Concrete states are implementing the same "ATMState" interface, and has a ATMMac
 ATMMachine has the same set of method defined in ATMState interface, when one of these methods is called, the currentState's corresponding method is called. 
 
 TestATMMachineClient will call ATMMachine's method, according to the current state of ATMMachine, the behavior of the ATMMachine will be different. 
+
+
+>> Reviewed
+	on 7/12/2019 for 2nd time. 
