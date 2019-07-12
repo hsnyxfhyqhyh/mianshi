@@ -1,4 +1,6 @@
-Template Method Pattern:
+****************************
+* Template Method Pattern: *
+****************************
 
 http://www.newthinktank.com/2012/10/template-method-design-pattern-tutorial/
 
@@ -22,3 +24,5 @@ http://www.newthinktank.com/2012/10/template-method-design-pattern-tutorial/
 
 6. The Class Load of JDK works the same way. 
 
+>> Reviewed
+	on 7/12/2019 for 2nd time. 
