@@ -2,12 +2,17 @@ http://www.newthinktank.com/2012/08/observer-design-pattern-tutorial/
 
 
 
-Õâ¸öÀý×ÓÊÇµ±stock price ·¢Éú±ä»¯µÄÊ±ºò£¬ ¹Û²ìstock price ±ä»¯µÄStockGrabber (Subject)»áÍ¨ÖªËùÓÐµÄÊµÌåObserver.   
+è¿™ä¸ªä¾‹å­æ˜¯å½“stock price å‘ç”Ÿå˜åŒ–çš„æ—¶å€™ï¼Œ è§‚å¯Ÿstock price å˜åŒ–çš„StockGrabber (Subject)ä¼šé€šçŸ¥æ‰€æœ‰çš„å®žä½“Observer.    
 
-SubjectÊÇ¸öInterface, ¶¨ÒåÁËregisterObserver, unregisterObserver, »¹ÓÐupdate function.  
+ Subjectæ˜¯ä¸ªInterface, å®šä¹‰äº†registerObserver, unregisterObserver, è¿˜æœ‰update function.   
 
-ÊµÌåSubject£¬ ¶¨ÒåÁË CollectionÀ´´¢´æObserver, ÊµÏÖµÄupdate function »áloop through collectionÀ´Ò»¸öÒ»¸öÍ¨Öª¡£  
+ å®žä½“Subjectï¼Œ å®šä¹‰äº† Collectionæ¥å‚¨å­˜Observer, å®žçŽ°çš„update function ä¼šloop through collectionæ¥ä¸€ä¸ªä¸€ä¸ªé€šçŸ¥ã€‚   
 
-ÊµÌåObserverÌá¹©Ò»¸ö¹¹Ôìº¯Êý£¬ ÕâÑù¿ÉÒÔ´«½østockGrabber, ±ãÓÚ°Ñ×Ô¼ºregisterµ½SubjectÀï¡£ 
+ å®žä½“Observeræä¾›ä¸€ä¸ªæž„é€ å‡½æ•°ï¼Œ è¿™æ ·å¯ä»¥ä¼ è¿›stockGrabber, ä¾¿äºŽæŠŠè‡ªå·±registeråˆ°Subjecté‡Œã€‚  
 
-ÆäÊµµ½ÕâÀïËùÓÐµÄobserver µÄ½²½â¾ÍÍêÁË¡£ µ«ÊÇDerekÓÖÌá¹©ÁËÏß³Ì·½Ê½À´Ä£ÄâÊµ¼Êstock ¸üÐÂµÄÇé¿ö¡£ ¾ßÌåÇé¿ö¼ûproject.  µ«ÊÇÃ¿Ö»¹ÉÆ±ÓÐµ¥¶ÀÏß³ÌÀ´´¦Àí¡£ 
+ å…¶å®žåˆ°è¿™é‡Œæ‰€æœ‰çš„observer çš„è®²è§£å°±å®Œäº†ã€‚ ä½†æ˜¯Derekåˆæä¾›äº†çº¿ç¨‹æ–¹å¼æ¥æ¨¡æ‹Ÿå®žé™…stock æ›´æ–°çš„æƒ…å†µã€‚ å…·ä½“æƒ…å†µè§project.  ä½†æ˜¯æ¯åªè‚¡ç¥¨æœ‰å•ç‹¬çº¿ç¨‹æ¥å¤„ç†ã€‚
+ 
+>> Reviewed
+	on 7/12/2019 for 2nd time. 
+
+	     
