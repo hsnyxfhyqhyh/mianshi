@@ -18,4 +18,9 @@ public class _03InnerClassInstantiation {
  * from the _03InnerClassInstantiation, create an instance, a, of the Outer
  * Use a to create an instance of the inner, b, ; 
  * 	then use b to call Inner's method display.   
+ * 
+ * NEED TO UNDERSTAND INNER CLASS HAS 3 TYPES. 
+ * 	member class
+ * 	static class
+ * 	anonymous class. 
  */
