@@ -28,17 +28,6 @@ public class _04ArrayInitiation {
 		 *  print the 3rd element. 
 		 */
 		
-		int[] arr = {5, 6, 8, 9, 10}; 
-		System.out.println(arr[2]);
-
-		int[] arr1 = new int[5]; 
-		arr1 [2] = 8; 
-		System.out.println(arr1[2]);
-		
-		//[] can be before variable name or after.
-		int arr2[] = new int[5]; 
-		arr2 [2] = 8; 
-		System.out.println(arr2[2]);
 	}
 	
 	public static void demo2D () {
@@ -51,22 +40,7 @@ public class _04ArrayInitiation {
 		 *  print 2d jaggard array's every element. 
 		 */
 		
-		int[] a = {3, 4, 6 , 8}; 
-		int[] b = {4, 6 , 10};
-		int[] c = {3, 5 , 7, 10};
 		
-		int[][] d = {a, b, c}; 
-		
-		System.out.println(d[2][1]);
-		
-		System.out.println(d[2]);
-		
-		for (int i =0; i<d.length; i++) {
-			for (int j=0; j< d[i].length ; j++) {
-				System.out.print(d[i][j] + " ");
-			}
-			System.out.println();
-		}
 			
 	}
 
