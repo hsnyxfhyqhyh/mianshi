@@ -14,7 +14,7 @@ public class _02ClassStaticBlock {
  * 	name:
  * 	salary:
  * 	ceo: static;  
- * 			initialize the ceo in static block, need to understand the static is called only once and before any instantiation of objects of the class. 
+ * 			initialize the ceo in static block, need to understand the static block is called only once and before any instantiation of objects of the class. 
  *  
  *  create a constructor with name/salary parameters. 
  *  create a toString method with all information of an instance.   
