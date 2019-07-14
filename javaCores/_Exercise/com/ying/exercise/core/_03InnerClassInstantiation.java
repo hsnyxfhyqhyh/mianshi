@@ -3,11 +3,6 @@ package com.ying.exercise.core;
 public class _03InnerClassInstantiation {
 
 	public static void main(String[] args) {
-		Outer obj  = new Outer(); 
-		
-		Outer.Inner b = obj.new Inner(); 
-		
-		b.display();
 	}
 
 }
@@ -24,14 +19,3 @@ public class _03InnerClassInstantiation {
  * Use a to create an instance of the inner, b, ; 
  * 	then use b to call Inner's method display.   
  */
-
-class Outer {
-	
-	
-	class Inner {
-		public void display() {
-			System.out.println("in inner display");
-		}
-	}
-	
-}
